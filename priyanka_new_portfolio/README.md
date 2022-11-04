@@ -7,10 +7,8 @@
 
 ## To run this project in the local machine run the following commands:
 ```
-git clone https://github.com/himrd95/me_Himanshu.git
+
 ```
-```
-cd me_Himanshu
 ```
 ```
 npm install
