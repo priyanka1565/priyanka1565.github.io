@@ -6,6 +6,10 @@ import Navbar from './Components/Navbar/Navbar';
 import { ASSETS } from './constants/links';
 import { ThemeContext } from './ContextProvider/ThemeContext';
 import { assetsPromise } from './Utils/helpers';
+import "aos/dist/aos.css";
+import { Github } from './Components/About/Github';
+
+
 
 function App() {
 	const [state, setState] = useState(false);
@@ -39,52 +43,54 @@ function App() {
 	}, [fetchAllAssets]);
 
 	return (
-		<React.Fragment>
-			{!state ? (
-				<div
-					style={{
-						background: `${newTheme.background}`,
-					}}
-					className='logoStart'
-				>
-					<img src={ASSETS.LOGO} alt='logo' />
-				</div>
-			) : (
-				<div className='components'>
-					<div
-						style={{
-							background: `${newTheme.menuBackground}`,
-							color: `${newTheme.title}`,
-							left: `${open ? '-100vw' : '0'}`,
-						}}
-						className='links'
-					>
-						<a onClick={handleMenu} href='#home'>
-							Home
-						</a>
-						<a onClick={handleMenu} href='#about'>
-							About
-						</a>
-						<a onClick={handleMenu} href='#experience'>
-							Experience
-						</a>
+    <React.Fragment>
+      {!state ? (
+        <div
+          style={{
+            background: `${newTheme.background}`,
+          }}
+          className="logoStart"
+        >
+          <img src={ASSETS.LOGO} alt="logo" />
+        </div>
+      ) : (
+        <div className="components">
+          <div
+            style={{
+              background: `${newTheme.menuBackground}`,
+              color: `${newTheme.title}`,
+              left: `${open ? "-100vw" : "0"}`,
+            }}
+            className="links"
+          >
+            <a onClick={handleMenu} href="#home">
+              Home
+            </a>
+            <a onClick={handleMenu} href="#about">
+              About
+            </a>
+            <a onClick={handleMenu} href="#experience">
+              Experience
+            </a>
 
-						<a onClick={handleMenu} href='#projects'>
-							Projects
-						</a>
-						<a onClick={handleMenu} href='#techStacks'>
-							Profeciencies
-						</a>
-						<a onClick={handleMenu} href='#contact'>
-							Contact
-						</a>
-					</div>
-					<Navbar />
-					<Home scrollRef={scrollRef} />
-				</div>
-			)}
-		</React.Fragment>
-	);
+            <a onClick={handleMenu} href="#projects">
+              Projects
+            </a>
+            <a onClick={handleMenu} href="#techStacks">
+              Profeciencies
+            </a>
+            <a onClick={handleMenu} href="#contact">
+              Contact
+            </a>
+            </div>
+            <Navbar />
+            <Home scrollRef={scrollRef} />
+             
+           
+            </div>
+      )}
+    </React.Fragment>
+  );
 }
 
 export default App;

@@ -14,6 +14,7 @@ import { ThemeContext } from '../../ContextProvider/ThemeContext';
 import Experiences from '../Experiences/Experiences';
 import { greeting, intro, myName } from '../../constants/constants';
 import { ASSETS } from '../../constants/links';
+import  Github  from '../About/Github';
 
 const Home = ({ scrollRef }) => {
 	const [projectArray, setProjectArray] = useState(
@@ -145,9 +146,6 @@ const Home = ({ scrollRef }) => {
           style={{ color: `${newTheme.para}` }}
         >
           <Experiences />
-          {/* "Himanshu is not only great for development, he is a problem
-					solver who always delivers an exceptional quality of work.
-					Highly recommended." */}
         </div>
       </div>
 
@@ -174,6 +172,12 @@ const Home = ({ scrollRef }) => {
         style={{
           background: `${newTheme.highlightBackground}`,
         }}
+      >
+        <Github />
+      </div>
+
+      <div
+        
       >
         <Contact />
       </div>

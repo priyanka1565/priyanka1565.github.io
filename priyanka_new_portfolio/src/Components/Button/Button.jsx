@@ -10,6 +10,7 @@ export const Button = ({ text, handleButton, padding }) => {
 				color: `${newTheme.title}`,
 				background: `${newTheme.linkHover}`,
 				padding: `${padding}`,
+				
 			}}
 			className={styles.buttonComponent}
 			onClick={() => handleButton()}

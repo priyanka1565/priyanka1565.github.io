@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeContextProvider } from './ContextProvider/ThemeContext';
 
+
 ReactDOM.render(
 	<React.StrictMode>
 		<ThemeContextProvider>
