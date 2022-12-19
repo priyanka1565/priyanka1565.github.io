@@ -19,6 +19,19 @@ export const Github = () => {
           width="45%"
         />
       </div>
+      <div className="cont_2">
+        <h1> GitHub contribution calendar</h1>
+
+        <img
+          align="right"
+          src="https://ghchart.rshah.org/priyanka1565"
+          alt="priyanka1565"
+          height="auto"
+          width="100%"
+          margin-top="5vh"
+          margin="5%"
+        />
+      </div>
     </div>
   );
 };
