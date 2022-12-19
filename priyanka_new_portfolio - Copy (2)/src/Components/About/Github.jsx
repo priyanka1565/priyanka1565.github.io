@@ -6,30 +6,52 @@ export const Github = () => {
       <div>
         <h1>Github Status</h1>
         <img
+          style={{
+            justifyContent: "center",
+            paddingBottom: "10px",
+            margin: "auto",
+            marginBottom: "20px",
+          }}
           align="left"
           src="https://github-readme-streak-stats.herokuapp.com/?user=priyanka1565&theme=radical"
           alt="priyanka"
           height="200px"
           width="45%"
+          marginBottom="20px"
         />
         <img
-          align="right"
+          style={{
+            justifyContent: "center",
+            paddingBottom: "10px",
+            margin: "auto",
+            marginBottom: "20px",
+          }}
+          align="center"
           src="https://github-readme-stats.vercel.app/api?username=priyanka1565&show_icons=true&theme=radical"
           height="200px"
           width="45%"
         />
       </div>
-      <div className="cont_2">
-        <h1> GitHub contribution calendar</h1>
+      <div
+        className="cont_2"
+        height="400px"
+        width="100%"
+        border="1px solid red"
+      >
+        <h1> GitHub Contribution Calendar</h1>
 
         <img
-          align="right"
+          style={{
+            justifyContent: "center",
+            paddingBottom: "10px",
+            margin: "auto",
+            marginBottom: "20px",
+          }}
+          align="center"
           src="https://ghchart.rshah.org/priyanka1565"
           alt="priyanka1565"
-          height="auto"
-          width="100%"
-          margin-top="5vh"
-          margin="5%"
+          height="300px"
+          width="90%"
         />
       </div>
     </div>
