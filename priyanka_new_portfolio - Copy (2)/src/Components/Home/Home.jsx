@@ -25,7 +25,7 @@ const Home = ({ scrollRef }) => {
 	const [location, setLocation] = useState(0);
 
 	useEffect(() => {
-		AOS.init();
+		 AOS.init();
 	});
 
 	const handleOffset = () => {
@@ -127,12 +127,12 @@ const Home = ({ scrollRef }) => {
         <About />
       </div>
 
-      <div id="techStacks" className={styles.techStacks}>
+      <div id="skills" className={styles.techStacks}>
         <TechStacks />
       </div>
 
       <div
-        id="experience"
+        id="skills"
         className={styles.experience}
         style={{
           background: `${newTheme.highlightBackground}`,

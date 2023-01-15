@@ -42,12 +42,14 @@ function App() {
 		}, 2200);
 	}, [fetchAllAssets]);
 
-	return (
+  return (
     <React.Fragment>
       {!state ? (
         <div
           style={{
             background: `${newTheme.background}`,
+            position: "fixed",
+            top: 0,
           }}
           className="logoStart"
         >
@@ -60,6 +62,8 @@ function App() {
               background: `${newTheme.menuBackground}`,
               color: `${newTheme.title}`,
               left: `${open ? "-100vw" : "0"}`,
+              position: "fixed",
+              top: 0,
             }}
             className="links"
           >
@@ -78,16 +82,20 @@ function App() {
             </a>
             <a onClick={handleMenu} href="#techStacks">
               Profeciencies
-              </a>
-              <a onClick={handleMenu} href="#contact">
+            </a>
+            <a onClick={handleMenu} href="#contact">
               Contact
             </a>
-            </div>
+            <a onClick={handleMenu} href="#contact">
+              Resume
+            </a>
+          </div>
+         
             <Navbar />
-            <Home scrollRef={scrollRef} />
-             
-           
-            </div>
+          
+
+           <Home scrollRef={scrollRef} /> 
+        </div>
       )}
     </React.Fragment>
   );

@@ -31,7 +31,7 @@ const Navbar = () => {
 	const [preScrollPos, setPreScrollPos] = useState(
 		window.pageYOffset,
 	);
-	const navRef = useRef();
+	 const navRef = useRef();
 
 	const { newTheme, mode, handleMode, open, handleMenu } =
 		useContext(ThemeContext);
@@ -41,7 +41,7 @@ const Navbar = () => {
 		if (preScrollPos > currentScrollPos) {
 			navRef.current.style.top = '0';
 		} else {
-			navRef.current.style.top = '-80px';
+			navRef.current.style.top = '0';
 		}
 		setPreScrollPos(currentScrollPos);
 	};
@@ -65,9 +65,8 @@ const Navbar = () => {
         <div style={{ color: `${newTheme.title}` }} className={styles.links}>
           <a href="#home">Home</a>
           <a href="#about">About</a>
-          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
-
           <a href="#contact">Contact</a>
         </div>
         <button
