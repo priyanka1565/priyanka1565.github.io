@@ -14,7 +14,7 @@ import { ThemeContext } from '../../ContextProvider/ThemeContext';
 import Experiences from '../Experiences/Experiences';
 import { greeting, intro, myName } from '../../constants/constants';
 import { ASSETS } from '../../constants/links';
-import { Github }  from '../About/Github';
+import { Github } from '../About/Github';
 
 const Home = ({ scrollRef }) => {
 	const [projectArray, setProjectArray] = useState(
