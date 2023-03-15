@@ -40,4 +40,14 @@ export const projects = [
     gitHub: "https://github.com/raus376/IndiaMart_Website",
     technologies: ["REST API", "DOM", "HTML", "CSS", "javaScript"],
   },
+  {
+    img: "https://res.cloudinary.com/dfjdtufsq/image/upload/v1678873499/Homepage_e1oxs3.png",
+    title: "Apna-Shop-Clone",
+    des: "This Project is an application focused more on the front-end that aims to be a virtual store, having versatility and the necessary security standards.",
+    demo: "",
+    live: "https://ecommerce-application-omega-mocha.vercel.app/home",
+    gitHub:
+      "https://github.com/priyanka1565/react-project/tree/main/ecommerce-application",
+    technologies: ["React","Redux","Bootstrap","FireBase", "HTML", "javaScript"],
+  },
 ];

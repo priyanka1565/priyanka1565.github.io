@@ -78,9 +78,9 @@ body::after {
 	background-position-y: 10vh;
 }
 .profileImage {
-	width: 500px;
+	width: 450px;
 	height: 500px;
-	border-radius: 50%;
+	border-radius: 40%;
 	overflow: hidden;
 	margin-left: 60px;
 	display: flex;
@@ -91,7 +91,7 @@ body::after {
 	transition: 0.3s;
 	position: fixed;
 	right: 8vw;
-	background-color:rgb(223,188,206);
+	background-color:#ffffff;
 }
 .profileImage img {
 	width: 400px;
