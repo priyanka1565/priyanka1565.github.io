@@ -90,11 +90,11 @@ body::after {
 	transform: rotate(-2deg);
 	transition: 0.3s;
 	position: fixed;
-	 right: 8vw;
-	background-color:#ffffff;
+	 right: 5vw;
+	background-color:#dfbdce;
 }
 .profileImage img {
-	width: 220px;
+	width: 210px;
 	
 }
 
