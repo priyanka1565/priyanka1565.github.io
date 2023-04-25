@@ -48,6 +48,7 @@ const Navbar = () => {
 
 	return (
     <nav
+      id="nav-menu"
       ref={navRef}
       className={styles.navContainer}
       style={{
