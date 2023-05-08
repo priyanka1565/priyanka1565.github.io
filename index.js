@@ -9,8 +9,8 @@ toggle.addEventListener("click", ()=> {
 }
 )
 
-    // GitHubCalendar(".calendar", "Yunuslala");
-    // GitHubCalendar(".calendar", "Yunuslala", { responsive: true });
+    // GitHubCalendar(".calendar", "priyanka1565");
+    // GitHubCalendar(".calendar", "priyanka1565", { responsive: true });
 
     function downloadresume(){
         window.open(
