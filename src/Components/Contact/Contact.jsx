@@ -21,6 +21,7 @@ const Contact = () => {
           className={styles.contactOptions}
         >
           <a
+            id="contact-phone"
             href="tel:9146775662"
             aria-label="GitHub"
             rel="noreferrer"
@@ -29,6 +30,7 @@ const Contact = () => {
             <i className="fas fa-phone-alt" />
           </a>
           <a
+            id="contact-mail"
             href="mailto: priyankaingle250@gmail.com"
             aria-label="email"
             target="_blank"
@@ -45,6 +47,7 @@ const Contact = () => {
             <i className="fab fa-twitter"></i>
           </a>
           <a
+            id="contact-github"
             href="https://github.com/priyanka1565"
             aria-label="GitHub"
             rel="noreferrer"
@@ -54,6 +57,7 @@ const Contact = () => {
           </a>
 
           <a
+            id="contact-linkedin"
             href="https://www.linkedin.com/in/priyanka-ingle-05b623231/"
             aria-label="Linkedin"
             target="_blank"
