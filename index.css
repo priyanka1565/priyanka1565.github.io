@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#resume-button-2{
+  background: none;
+  color: #75b3be;
+  font-size: 1.2rem;
+  border: none;
+}
+#resume-button-1{
+  color: #ffff;
+  background: none;
+  border: none;
+  font-size: 22px;
+  text-align: center;
+  margin-top: -7.5px;
+
+}
+
+.App{
+  background-color: #111;
+  min-height: 100vh;
+}
+#gitimg{
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar{
+  display: flex;
+  width: 100%;
+  background-color: #111;
+  position: fixed;
+  justify-content: space-between;
+  padding: 0.5rem 1.3rem;
+  color: #ffff;
+  font-size: 1.5rem;
+  z-index: 100;
+}
+.dropdown{
+  display: none;
+}
+
+
+
+
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+li, .logo{
+  margin: 0.5rem;
+  cursor: pointer;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .round:hover {
+    animation: round-spin 1 0.5s linear;
+  }
+}
+@keyframes round-spin{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.menu{
+  display: flex;
+}
+.socials{
+  margin-left: 1.3rem;
+  /* background-color: grey; */
+  padding: 3px 30px;
+  border-radius: 20px;
+
+}
+.links, a{
+  color: #fff;
+  text-decoration: none;
+}
+.links:hover{
+  color: #7ee8fa;
+}
+.links:focus{
+  color: #7ee8fa;
+}
+.resume{
+  margin-top: 0;
+  padding: 0.2rem;
+  border: 1px solid #75b3be;
+  width: 40%;
+  text-align: center;
+  border-radius: 5px;
+  color: #7ee8fa;
+}
+
+.home{
+  color: #ffff;
+  display: flex;
+  justify-content: space-between;
+  z-index: 0;
+  min-height: 100vh;
+}
+.main{
+  margin: 20vh 0 0 5rem;;
+  z-index: 80;
+}
+.image{
+  z-index: 0;
+  position: absolute;
+  right: 0;
+  bottom: 10vh;
+  object-fit: contain;
+}
+.intro .text, .intro2 .text, .Bottom .free .txthead, .techstacks .intro, .aboutmeintro, .contsmes{
+  font-family: 'Lobster Two', cursive;
+  font-size: 4rem;
+  color: #fff;
+  background-color: #eec0c6;
+ background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contsmes{
+  font-size: 30px;
+}
+
+.tagline{
+  margin-top: 1.3rem;
+  /* color: rgb(168, 158, 158); */
+  font-size: 1.2rem;
+}
+.button{
+  margin-top: 1.4rem;
+  padding: 0.8rem;
+  border: 1px solid #75b3be;
+  width: 40%;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: #2d3638c2;
+  transition: all 0.3s ease-in-out;
+}
+.button a{
+  color: #75b3be;
+}
+/* mobile */
+.mobile-menu{
+  display: none;
+}
+
+/* about component */
+.About{
+  margin: 10vh 5vh;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+.imageme img{
+  object-fit: contain;
+  border-radius: 8px;
+}
+.abouttext{
+  margin: 0 3rem;
+}
+.aboutmeintro{
+  margin: 0 5vh;
+  color: white;
+  font-size: 3rem;
+  font-family: 'Lobster Two', cursive;
+}
+.abouttext .headtext{
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+.abouttext .details, .abouttext .more{
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+.Tech{
+  color: #fff;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.techstacks .intro{
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+.techstacks .techs{
+  width: 92%;
+  margin: auto;
+  height: 650px;
+}
+#techsIcon{
+  margin: auto;
+display: grid;
+grid-template-rows: repeat(2, 1fr);
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 30px;
+margin-top: 30px;
+margin-left: 10px;
+}
+.show{
+  background-color: red;
+  display: block;
+}
+#iconOfstach{
+  height: 180px;
+  width: 180px;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+
+#iconOfstach>img{
+  border-radius: 25px;
+}
+.techstacks .techs div{
+  line-height: 1.4rem;
+  font-size: 1rem;
+}
+#propsimg{
+  margin-top: 5px;
+  height: 95%;
+  width:  95%;
+  margin-left: 5px;
+  object-fit: contain;
+}
+#iconOfstach:hover{
+transform: scale(1.1);
+transition: 3s;
+}
+/* bottomabout */
+.Bottom{
+  color: #fff;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Bottom .free .txthead{
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+}
+.Bottom .free .txt{
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+.Bottom .free .txt a{
+  text-decoration: underline #eec0c6 4px;
+}
+
+/* project */
+.Project{
+  font-size: 2rem;
+  color: #fff;
+  margin-top: 50px;
+}
+.projs:hover{
+  transform: scale(1.1);
+  transition: 4s;
+}
+.Project .head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Project .head .projectsIntro{
+  /* color: grey; */
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+.Project .container{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.Project .container .projs{
+  margin: 2rem 3rem;
+  padding-bottom: 1rem;
+  border-radius: 6px;
+  box-shadow: 3px 3px 10px #383737d5;
+}
+.Project .container .projs img{
+  object-fit: contain;
+  width: 100%;
+}
+.Project .container .projs .title{
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+.Project .container .projs .projinfo{
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 0.2rem 0.5rem;
+}
+.Project a{
+  margin: 0.6rem;
+  border: 1px solid  rgb(117, 179, 190);
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.Project a:hover{
+  background-color: rgb(117, 179, 190);
+  transition: all 0.5s ease;
+}
+.Project .moreprojs{
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  margin: 1rem;
+  line-height: 2;
+}
+/* conatcts */
+.Contact{
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+#email , #git{
+  text-decoration: none;
+  border: none;
+  font-size: 30px;
+}
+#email:hover , #git:hover{
+  border-bottom: 5px dotted white;
+   background-color: transparent;
+}
+.socialsInAbout{
+  width: 200px;
+  font-size: 30px;
+}
+.contactimg img{
+  height: 350px;
+  width: 350px;
+  border-radius: 13px;
+  object-fit: cover;
+}
+.name, .prof{
+  text-align: center;
+}
+.name{
+  font-weight: 800;
+}
+.prof{
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.conlinks{
+  display: flex;
+}
+.conlinks div{
+  margin: 5px;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.conlinks div a{
+  color: rgb(0, 204, 255);
+  text-decoration: underline;
+}
+
+/* form */
+form{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.labels{
+  display: flex;
+  justify-content: space-around;
+}
+label{
+  font-size: 20px;
+}
+form input, form label, form button{
+  margin-bottom: 10px;
+}
+form input{
+  border: 2px solid gray;
+  color: white;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-size: 18px;
+  background: transparent;
+  margin: 0 10px;
+}
+form input:focus{
+  border-color: #7ee8fa;
+}
+textarea{
+  color: #fff;
+  background: none;
+  font-size: 16px;
+  padding: 0.6rem;
+  margin-top: 1rem;
+  border: 2px solid gray;
+  width: 30rem;
+  height: 10rem;
+}
+form button{
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+ background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+
+  /* background-image: radial-gradient( circle 780.6px at 10% 20%,  rgba(133,255,189,1) 0%, rgba(255,251,125,1) 90.7% );; */
+  width: 20rem;
+  color: black;
+}
+.center{
+  text-align: center;
+}
+#resumesec{
+  gap: 20px;
+  display: flex;
+}
+
+#headeradd{
+  display: flex;
+  height: 70px;
+  /* border: 2px solid red; */
+  margin-top: 50px;
+  margin-left: -30px;
+  justify-content: space-between;
+}
+/* media queries for nav and home components */
+@media screen and (max-width: 1100px) {
+  /* navbar */
+  .navbar{
+    padding: 0.5rem;
+  }
+  .menu{
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    flex-direction: column;
+  }
+  .menu .navvs{
+    display: block;
+    text-align: center;
+  }
+  .menu .navvs li{
+    margin: 3rem;
+  }
+  #gitimg{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width:100%;
+    margin: auto;
+    align-items: center;
+  }
+  .gitcal{
+    width: 100%;
+    text-align: center;
+ 
+    align-items: center;
+  }
+  .menu.active{
+    background-color: #111;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease-in;
+    z-index: 100;
+    align-content: center;
+  }
+  .mobile-menu{
+    display: block;
+    
+  }
+  .dropdown{
+    display: none;
+    width: 20%;
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    font-size: 20px;
+    top: 50px;
+    right: 0px;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+  }
+  .navvs{
+    display: flex;
+    flex-direction: column;
+  }
+  #resume-button-1{
+    font-size: 18px;
+    padding-top: 17px;
+    padding-left: 3px;
+  }
+  .active .mobile-menu>i:nth-child(2) {
+    display: block;
+    color: #fff;
+}
+ .mobile-menu>i:nth-child(2) {
+  display: none;
+}
+
+.active .dropdown{
+  transform: translateX(0);
+  /* right: 100px; */
+}
+.active .mobile-menu>i:nth-child(1) {
+    display: none;
+}
+  /* home */
+  .home{
+    min-height: 100vh;
+  }
+  .intro .text, .intro2 .text{
+    font-size: 2.5rem;
+  }
+  .main{
+    margin: 10vh 0 0 2rem
+  }
+  .image{
+    width: 100%;
+  }
+  /* about */
+  .About{
+    display: block;
+    margin: 5vh 1vh;
+  }
+  .imageme img{
+    width: 100%;
+    border-radius: 8px;
+  }
+  .abouttext{
+    margin: 0 2rem;
+  }
+  .abouttext .techstacks .techs{
+    width: 100%;
+  }
+  .button{
+    padding: 0.7rem;
+  }
+ 
+  /* Project */
+  .Project .container{
+    display: block;
+  }
+  .Project .head .projectsIntro{
+    text-align: center;
+  }
+  textarea{
+    width: 19rem;
+  }
+
+  .techstacks .techs{
+    width: 70%;
+    margin: auto;
+    height: auto;
+  }
+  #techsIcon{
+    margin: auto;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  margin-top: 30px;
+  /* margin-left: 10px; */
+  }
+  #iconOfstach{
+    height: 120px;
+    width: 120px;
+    border-radius: 25px;
+    border: 2px solid white;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+  }
+
+  #headeradd{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+#headeradd{
+  height: 200px;
+}
+}
+
+.live_git{
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+.button{
+padding: 10px;
+height: auto;
+}
+.resumebtn{
+  padding: 50px;
+}

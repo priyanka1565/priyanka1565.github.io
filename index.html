@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="./Y2_icon.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="My portfolio website." />
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+  </script>
+  <title>Priyanka. Ingle | Web-Developer</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+
+
+<body>
+  <div id="root">
+    <div class="App">
+      <div class="navbar nav-menu" id="nav-menu">
+        <Link to='/'>
+        <div class="logo round" id="user-detail-name" >Priyanka. Ingle</div>
+        </Link>
+        <div class="menu">
+          <ul class="navvs">
+            <li class='hovers' id="home"> <a href='#Homeid'>Home</a> </li>
+            <li class='hovers about section' id="about"> <a href='#About'>About</a> </li>
+            <li class='hovers' id="skills"><a href='#techs'>Skills</a> </li>
+            <li class='hovers' id="projects"><a href='#project'>Projects</a> </li>
+            <li class='hovers' id="contact"><a href='#bottom'>Contact</a> </li>
+            <button class='hovers' id="resume-button-1" onclick="downloadresume()"> <a href="./Priyanka_Ingle_Resume.pdf" download id="resume-link-1">
+              Resume
+            </a></button> 
+          </ul>
+          <div class="socials">
+            <ul>
+              <li class='round'>
+                <a id="contact-email" target="_blank" rel="noreferrer" href="mailto:priyankaingle@gmail.com">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li class='round' id="contact-github">
+                <a target="_blank" rel="noreferrer" href="https://github.com/priyanka1565">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+              <li class='round' id="contact-linkedin">
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/priyanka-ingle-05b623231/">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+          <div class="mobile-menu ">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="dropdown">
+            <ul class="navvs">
+              <li class='hovers' id="home"> <a href='#Homeid'>Home</a> </li>
+              <li class='hovers about section' id="about"> <a href='#About'>About</a> </li>
+              <li class='hovers' id="Skills"><a href='#techs'>Skills</a> </li>
+              <li class='hovers' id="projects"><a href='#project'>Projects</a> </li>
+              <li class='hovers' id="contact"><a href='#bottom'>Contact</a> </li>
+              <button class='hovers' id="resume-button-1" onclick="downloadresume()"> <a href="./Priyanka_Ingle_Resume.pdf" download id="resume-link-1">
+                Resume
+              </a></button>
+            </ul>
+          </div>
+      </div>
+
+      <section id="home" class="nav-link home">
+        <div id='Homeid' class="home">
+          <div class="main">
+            <div class="intro">
+              <div class="text">Hi I'm Priyanka. Ingle</div>
+            </div>
+            <div class="intro2">
+              <div class="text">Web Developer</div>
+            </div>
+            <div id='resumesec'>
+              <div class="button">
+                <a href="#bottom">Get In Touch</a>
+              </div>
+              <div class="button">
+                <button id="resume-button-2" onclick="downloadresume()">
+                  <a href="./Mohd.-Yunus-Resume.pdf" download id ="resume-link-2">
+                    Resume
+                  </a>
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <img class="image" src="https://ritesh-yadav.vercel.app/static/media/undraw_Hello_re_3evm.0239a64b.svg"
+            alt="Hello" />
+        </div>
+      </section>
+      <section id="About" id='about' class="nav-link about" >
+        <div  >
+        <div id="user-detail-intro">
+        </div>
+          <div class="aboutmeintro">A short introduction about me</div>
+          <div class="About">
+            <div class="abouttext">
+              <div class="headtext">
+                <span >
+                  I'm Priyanka.Ingle,
+                </span>
+
+                <div>A Software Developer Based In India.</div>
+              </div>
+              <div class="details" >
+                I am currently a student at Masai School studying (MERN) Fullstack web Developer. I also know React.js, Redux.js, JavaScript, HTML, CSS, Node.js, Express.js, Low Level and High Level Designing of Systems and good uderstanding of AWS cloud Services.
+                I'm passionate about programming and everything technology and have endeavored to be upto date with the current technologies and skills.
+              </div>
+              <div class="more">
+                I design and create beautiful and exceptional websites . I dream of working on websites to be used by billions of people use and having an impact on the world with my work.
+              </div>
+              <div class="socialsInAbout">
+                <ul>
+                  <li class='round' >
+                    <a id="contact-email" target="_blank" rel="noreferrer" href="priyankaingle250@gmail.com">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                        </path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class='round' id="contact-github" >
+                    <a target="_blank" rel="noreferrer" href="https://github.com/priyanka1565">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z">
+                        </path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class='round' id="contact-linkedin" >
+                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/priyanka-ingle-05b623231/">
+                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                        </path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class='round' >
+                    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/saifsiddiqui836/">
+
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="imageme">
+              <img class="home-img"
+                src="https://res.cloudinary.com/dfjdtufsq/image/upload/v1667578467/samples/ppp3_p00pyn.png"
+                alt="Allan" height="300" />
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section id="skills" id="nav-link" class="nav-link skills">
+        <div class="Tech " id="techs">
+          <div class="techstacks skills-card">
+            <div class="intro">
+              Here are a few technologies that I've been working with
+            </div>
+            <div class="techs" id="techsIcon">
+              <div id="iconOfstach" class="skills-card">
+                <img id="propsimg" class="skills-card-img" src="https://cdn.svgporn.com/logos/html-5.svg" >
+                <p class="skills-card-name">HTML</p>
+              </div>
+              <div id="iconOfstach" class="skills-card">
+                <img id="propsimg" class="skills-card-img" src="https://cdn.svgporn.com/logos/css-3.svg" >
+                <p class="skills-card-name">Css</p>
+              </div>
+              <div id="iconOfstach" class="skills-card">
+                <img id="propsimg" class="skills-card-img" src="https://cdn.svgporn.com/logos/javascript.svg" >
+                <p class="skills-card-name">JavaScript</p>
+              </div>
+              <div id="iconOfstach" class="skills-card">
+                <img id="propsimg" class="skills-card-img" src="https://cdn.svgporn.com/logos/react.svg" >
+                <p class="skills-card-name">React</p>
+              </div>
+              <div id="iconOfstach" class="skills-card">
+                <img id="propsimg" class="skills-card-img" src="https://cdn.svgporn.com/logos/nodejs.svg" >
+                <p class="skills-card-name">Node.js</p>
+              </div>
+              <div id="iconOfstach" class="skills-card">
+                <img id="propsimg" class="skills-card-img" src="https://cdn.svgporn.com/logos/express.svg" >
+                <p class="skills-card-name">Express</p>
+              </div>
+              <div id="iconOfstach" class="skills-card">
+                <img id="propsimg" class="skills-card-img" src="https://cdn.svgporn.com/logos/mongodb.svg" >
+                <p class="skills-card-name">MongoDb</p>
+              </div>
+              <div id="iconOfstach" class="skills-card">
+                <img id="propsimg" class="skills-card-img" src="https://tse2.mm.bing.net/th?id=OIP.knt4jZIR6HmZVpzxlgWnswHaHa&pid=Api&P=0" >
+                <p class="skills-card-name">MYSQL</p>
+              </div>
+              <div id="iconOfstach" class="skills-card">
+                <img id="propsimg" class="skills-card-img" src="https://tse3.mm.bing.net/th?id=OIP.b_al7C5p26tbZG4sy-CWqwHaFj&pid=Api&P=0" >
+                <p class="skills-card-name">AWS</p>
+              </div>
+              <div id="iconOfstach" class="skills-card">
+                <img id="propsimg" class="skills-card-img" src="https://tse4.mm.bing.net/th?id=OIP._3vUgoaeHLzrUA0aaotoSQAAAA&pid=Api&P=0" >
+                <p class="skills-card-name">TYPESCRIPT</p>
+              </div>
+            </div>
+              </div>
+          </div>     
+      </section>
+
+      <section id='projects' class="nav-link projects">
+        <div id="project">
+          <div class="Project">
+            <div class="head">
+              My Projects
+              <div class="projectsIntro">
+                <div>
+                  Here are some of the projects that I have done
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="projs project-card">
+
+                <img class="img"
+                  src="https://res.cloudinary.com/djjrzubcr/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1673791062/Hubspot-image_njahoc.jpg"
+                  alt="Tooth-Tracker">
+
+                <div class="project-title title">HubSpot-Clone</div>
+                <div class="projinfo project-description">
+                HubSpot is a Cloud-Based CRM. HubSpot is a Software platform designed to help Company market and sell more effectively
+                </div>
+                <div class="projinfo project-tech-stack">
+                  Tech-Stacks : HTML | JavaScript | React | Redux | Express | Node.js | MongoDB | NPM - Dotenv, jsonwebtoken , bcryptjs
+                </div>
+                <div class="live_git">
+                  <div class="projlinks project-deployed-link">
+                    <a href="https://animated-narwhal-cecc2b.netlify.app/" target="_blank">Live</a>
+                  </div>
+                  <div class="projlinks project-github-link">
+                    <a href="https://github.com/Guruprasad3n/HubSpot.com---Clone"
+                      target="_blank">Source Code</a>
+                  </div>
+                </div>
+              </div>
+              <div class="projs project-card">
+
+                <img class="img"
+                  src="https://res.cloudinary.com/djjrzubcr/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1673791148/Yoox-image_u3tsho.jpg"
+                  alt="QRBOT">
+
+                <div class="project-title title">
+                 Yoox-Clone
+                </div>
+                <div class="projinfo project-description">
+                  Clone of fashion products E-commerce website. We have added Authentication functionality, added add to cart, along with checkout function.
+                </div>
+                <div class="projinfo project-tech-stack">
+                  Tech-Stacks : HTML | CSS | JavaScript | React | Redux | Node.js |MongoDb | Express |
+                
+                </div>
+                <div class="live_git">
+                  <div class="links project-deployed-link">
+                    <a href="https://www-qrbot-com.netlify.app/" target="_blank" rel="noreferrer">Live</a>
+                  </div>
+                  <div class="links project-github-link">
+                    <a href="https://github.com/abhishek1494k/QRBOT.com" target="_blank"
+                      rel="noreferrer">Source Code</a>
+                  </div>
+                </div>
+              </div>
+              <div class="projs project-card">
+
+                <img class="img"
+                  src="https://res.cloudinary.com/dfjdtufsq/image/upload/v1678873499/Homepage_e1oxs3.png"
+                  alt="lyst">
+
+                <div class="project-title title"> Apna-Shop-Clone</div>
+                <div class="projinfo project-description">This Project is an application focused more on the front-end that aims to be a virtual store, having versatility and the necessary security standards.</div>
+                <div class="projinfo project-tech-stack">Tech-Stacks : Html | Javascript | React.JS | Redux | Bootstrap | FireBase |
+                  </div>
+                <div class="live_git">
+                  <div class="links project-deployed-link">
+                    <a href="https://ecommerce-application-omega-mocha.vercel.app/home" target="_blank"
+                      rel="noreferrer">Live</a>
+                  </div>
+                  <div class="links project-github-link">
+                    <a href="https://github.com/priyanka1565/react-project/tree/main/ecommerce-application" target="_blank" rel="noreferrer">Source
+                      Code</a>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="projs project-card">
+              
+                  <img class="img"
+                    src="https://res.cloudinary.com/dfjdtufsq/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1667716682/samples/work1_z3822l.jpg"
+                    alt="FinishLine">
+              
+                <div class="project-title title">
+                 IndiaMart Clone
+                </div>
+                <div class="projinfo project-description">
+                 is an Indian massive open online Cosmetics Platform for Purchasing Indian Goods in Cheapest price.
+                </div>
+                <div class="projinfo project-tech-stack">
+                  Tech-Stacks : HTML | CSS | LocalStorage | Javascript | Reast API |
+                  Node js
+                </div>
+                <div class="live_git">
+                  <div class="links project-deployed-link">
+                    <a href="https://realindiamart.netlify.app/" target="_blank" rel="noreferrer">Live</a>
+                  </div>
+                  <div class="links project-github-link">
+                    <a href="https://github.com/raus376/IndiaMart_Website" target="_blank"
+                      rel="noreferrer">Source Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="moreprojs">
+              <div>For more You can view my github</div>
+              <div><a href="https://github.com/priyanka1565" target="_blank"><svg stroke="currentColor" fill="currentColor"
+                    stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                    </path>
+                  </svg> Github</a></div>
+            </div>
+
+          </div>
+        </div>
+        
+      </section>
+      <section class="react-activity-calendar">
+        <div class="gitcal">
+          <h1 style="color:white;text-align:center; width: 100%;">Github</h1>
+          <div id="gitimg">
+            <img width="50%" id="github-stats-card"
+            src="https://github-readme-stats.vercel.app/api?username=priyanka1565&show_icons=true&theme=radical"
+            alt="priyanka1565">
+            <img width="50%" id="github-top-langs"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yunuslala&theme=black&layout=compact&theme=dark"
+            alt="Yunuslala">
+          <img width="50%" id="github-streak-stats"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=priyanka1565&theme=radical"
+            alt="priyanka1565">
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="nav-link contact">
+        <div id="bottom" class="Bottom">
+          <div class="free">
+            <div class="txthead">If you want to Say something feel free to contect me.
+            </div>
+            <div class="txt">
+              or Have an exciting project or idea ?
+              <div class="contsmes">
+                Contact Me:
+              </div>
+            </div>
+            <div class="form">
+              <div id="headeradd">
+                <h2 class="contsmes">
+                  Email:<a href="mailto:saifjava2@gmail.com" id="email"> priyankaingle250@gmail.com</a>
+                </h2>
+                <h2 class="contsmes">Github: <a href="https://github.com/priyanka1565" id="git" target="_blank">
+                    priyanka1565</a>
+                </h2>
+                <h2 class="contsmes">From: Pune Maharatra</h2>
+                <h2 class="contsmes" id="contact-phone">Contact:9696510765</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="nav-link resume">
+
+      </section>
+    </div>
+
+  </div>
+<!-- updated -->
+</body>
+
+</html>
+
+<script src="index.js"></script>
+
+//<button><a></a></button>
