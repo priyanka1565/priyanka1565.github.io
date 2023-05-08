@@ -6,6 +6,7 @@ export const Github = () => {
       <div>
         <h1>Github Status</h1>
         <img
+          id="github-streak-stats"
           style={{
             justifyContent: "center",
             paddingBottom: "10px",
